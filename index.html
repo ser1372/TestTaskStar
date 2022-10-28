@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/style.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="flex-items">
+        <form action="POST" method="post">
+            <label class="switch" id="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+            </label>
+
+            <button type="submit" id="sub" onclick="createMoon()">Submit</button>
+
+            <div class="root">
+
+                <button type="button" class="count_plus" id="minus">
+                    -
+                </button>
+                <input type="number" placeholder="1" id="count" disabled>
+                <button type="button" id="plus">
+                    +
+                </button>
+            </div>
+        </form>
+    </div>
+
+    <script src="./JS/main.js"></script>
+</body>
+
+</html>

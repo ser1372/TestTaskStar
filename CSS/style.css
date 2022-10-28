@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=DM+Mono&family=Gothic+A1&family=Lato&family=Montserrat:wght@300&family=Poppins&family=Roboto:ital@1&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+button{
+    font-family: 'Poppins', sans-serif;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 100px;
+  height: 40px;
+}
+
+form > button {
+  width: 100px;
+  height: 50px;
+  border-radius: 15px;
+  border-color: red;
+  background: linear-gradient(blue, red, pink);
+  font-weight: 900;
+  color: indigo;
+  font-size: 15px;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+form {
+  display: flex;
+  justify-content: space-around;
+}
+
+.switch input {
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: darkgray;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 38px;
+  width: 38px;
+  left: 5.9px;
+  bottom: 1.5px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #2196f3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(50px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+
+
+.root > button {
+  border-radius: 50%;
+  width: 26px;
+  height: 26px;
+  background-color: rgb(80, 73, 73);
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.root > input {
+  width: 24px;
+  border: none;
+  font-size: 14px;
+}
+
+.root > input::placeholder {
+  color: black;
+  padding: 0 9px;
+
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  
+}
+
+
+
+
+.moon {
+	position: absolute;
+	width: 60px;
+	height: 60px;
+	top: 100px;
+	left: 100px;
+	background-color: #ffffaa;
+	border-radius: 50%;
+  box-shadow: 0 0 40px #ffffaa;
+}
+
+
+.star{
+  width: 25px;
+  height: 25px;
+  background-color: red;
+  border-radius: 50%;
+}
+

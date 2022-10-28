@@ -31,14 +31,6 @@ minus.onclick = function () {
   }
 };
 
-function chooseMoon(){
- 
-  
-
-  
-    document.body.innerHTML = moon;
-  
-}
 
 function createMoon() {
   let checkbox = document.getElementById('checkboxs');

@@ -1,7 +1,5 @@
 const countInput = document.getElementById("count");
-const valueInput = document.getElementById("count").value;
 const plus = document.getElementById("plus");
-const form = document.getElementById("forma");
 const switcher = document.getElementById("switch");
 
 
@@ -16,7 +14,7 @@ plus.onclick = function () {
     countInput.value = 1;
   }
 
-  console.log(countInput.value)
+
 };
 
 minus.onclick = function () {
@@ -55,7 +53,7 @@ function createMoon() {
 
   document.getElementById('body').innerHTML = result;
   
-    console.log(document.body.querySelector('moon'))
+  
  
 }
 

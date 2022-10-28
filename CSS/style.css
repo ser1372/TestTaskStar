@@ -6,12 +6,14 @@
   box-sizing: border-box;
 }
 
-body{
-    font-family: 'Poppins', sans-serif;
+
+
+body {
+  font-family: 'Poppins', sans-serif;
 }
 
-button{
-    font-family: 'Poppins', sans-serif;
+button {
+  font-family: 'Poppins', sans-serif;
 }
 
 .switch {
@@ -21,7 +23,7 @@ button{
   height: 40px;
 }
 
-form > button {
+form>button {
   width: 100px;
   height: 50px;
   border-radius: 15px;
@@ -50,7 +52,7 @@ form {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: darkgray;
+  background-color: yellow;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -67,15 +69,15 @@ form {
   transition: 0.4s;
 }
 
-input:checked + .slider {
+input:checked+.slider {
   background-color: #2196f3;
 }
 
-input:focus + .slider {
+input:focus+.slider {
   box-shadow: 0 0 1px #2196f3;
 }
 
-input:checked + .slider:before {
+input:checked+.slider:before {
   -webkit-transform: translateX(26px);
   -ms-transform: translateX(26px);
   transform: translateX(50px);
@@ -92,7 +94,7 @@ input:checked + .slider:before {
 
 
 
-.root > button {
+.root>button {
   border-radius: 50%;
   width: 26px;
   height: 26px;
@@ -102,13 +104,13 @@ input:checked + .slider:before {
   cursor: pointer;
 }
 
-.root > input {
+.root>input {
   width: 24px;
   border: none;
   font-size: 14px;
 }
 
-.root > input::placeholder {
+.root>input::placeholder {
   color: black;
   padding: 0 9px;
 
@@ -118,28 +120,37 @@ input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   /* display: none; <- Crashes Chrome on hover */
   -webkit-appearance: none;
-  
+
 }
 
 
 
 
 .moon {
-	position: absolute;
-	width: 60px;
-	height: 60px;
-	top: 100px;
-	left: 100px;
-	background-color: #ffffaa;
-	border-radius: 50%;
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  top: 100px;
+  left: 100px;
+  background-color: #ffffaa;
+  border-radius: 50%;
   box-shadow: 0 0 40px #ffffaa;
 }
 
 
-.star{
-  width: 25px;
-  height: 25px;
-  background-color: red;
+.moonSecond {
+  width: 100px;
+  height: 100px;
+  margin: -20px 0 20px 0;
   border-radius: 50%;
+  box-shadow: 15px 15px 0 0 #ffffaa;
 }
 
+
+.star {
+  width: 25px;
+  height: 25px;
+  background-color: white;
+  border-radius: 50%;
+  z-index: 10;
+}

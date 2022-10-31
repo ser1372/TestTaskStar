@@ -22,6 +22,9 @@ minus.onclick = function () {
   }
 };
 
+function random(x,y){
+  return(x + (Math.random() * (y -x )));
+}
 
 function createMoon() {
   let checkbox = document.getElementById('checkboxs');
@@ -38,13 +41,14 @@ function createMoon() {
   document.body.style.background = "#000";
   let stars = ``;
   for (let i = 0; i < countInput.value; i++) {
-     result += "<div class=star></div>";
-
+     result += '<div class=star style="top: '+ random(0,100) +'%; left: '+random(0,100) + '%;"></div>';
+     
   }
   result + stars;
-
+  
 
   document.getElementById('body').innerHTML = result;
+  x
   
   
  

@@ -130,8 +130,8 @@ input::-webkit-inner-spin-button {
   position: absolute;
   width: 60px;
   height: 60px;
-  top: 100px;
-  left: 100px;
+  top: 50%;
+  left: 50%;
   background-color: #ffffaa;
   border-radius: 50%;
   box-shadow: 0 0 40px #ffffaa;
@@ -139,15 +139,19 @@ input::-webkit-inner-spin-button {
 
 
 .moonSecond {
+  position: absolute;
   width: 100px;
   height: 100px;
   margin: -20px 0 20px 0;
+  left: 50%;
+  top: 50%;
   border-radius: 50%;
   box-shadow: 15px 15px 0 0 #ffffaa;
 }
 
 
 .star {
+  position: absolute;
   width: 25px;
   height: 25px;
   background-color: white;

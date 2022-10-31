@@ -2,19 +2,12 @@ const countInput = document.getElementById("count");
 const plus = document.getElementById("plus");
 const switcher = document.getElementById("switch");
 
-
-
-
-
-
 plus.onclick = function () {
   countInput.value = ++countInput.value;
 
   if (countInput.value == 100) {
     countInput.value = 1;
   }
-
-
 };
 
 minus.onclick = function () {

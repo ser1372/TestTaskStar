@@ -48,7 +48,6 @@ function createMoon() {
   
 
   document.getElementById('body').innerHTML = result;
-  x
   
   
  
